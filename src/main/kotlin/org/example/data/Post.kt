@@ -19,7 +19,7 @@ open class Post(
     var views:Array<View>?,
     var postType:String,
     var postSource: PostSource?,
-    var attachments:Array<Media>?,
+    var attachments:Array<Attachment>?,
     var geo: Geo?,
     var signerId:Int = 0,
     var copyHistory:Array<Post>?,
