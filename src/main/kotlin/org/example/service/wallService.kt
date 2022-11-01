@@ -13,8 +13,8 @@ object WallService {
     }
 
     fun update(post: Post): Boolean {
-        for(i in 0..posts.size-1){
-            if(posts[i].id == post.id){
+        for (i in 0..posts.size - 1) {
+            if (posts[i].id == post.id) {
                 posts[i].attachments = post.attachments;
                 posts[i].canDelete = post.canDelete;
                 posts[i].canEdit = post.canEdit;
@@ -45,11 +45,13 @@ object WallService {
         }
         return false
     }
+
     //Служебная функция для внутреннего тестирования
-    fun getLast():Post{
+    fun getLast(): Post {
         return posts.last();
     }
-    fun clearPosts(){
+
+    fun clearPosts() {
         posts = emptyArray();
     }
 }
