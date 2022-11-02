@@ -3,9 +3,33 @@ package org.example.service
 import org.example.data.Post
 import org.example.data.includeClasses.Comment
 import org.example.data.includeClasses.Repost
+import java.lang.NullPointerException
+import java.lang.RuntimeException
 
 object WallService {
-    private var posts = emptyArray<Post>()
+    private var posts = emptyArray<Post>();
+    private var comments = emptyArray<Comment>();
+
+    fun createComment(postId: Int, comment: Comment): Comment? {
+
+        val NullComment = null
+        for ((index, post) in posts.withIndex()) {
+            if (post.id == postId) {
+                if (posts[index].comments == null) {
+                    posts[index].comments = comments;
+                }
+                //println(posts[index].comments?.size);
+                var list: MutableList<Comment> = posts[index].comments!!.toMutableList();
+                list.add(comment);
+                posts[index].comments = list.toTypedArray();
+                //println(posts[index].comments?.size)
+                var newComment = posts[index].comments?.last();
+                return newComment;
+            }
+        }
+        if(NullComment == null) throw PostNotFoundException("Нет Поста с id ${postId}");
+        return null;
+    }
 
     fun add(post: Post): Post {
         posts += post;
@@ -55,3 +79,5 @@ object WallService {
         posts = emptyArray();
     }
 }
+
+class PostNotFoundException(message: String) : RuntimeException(message);

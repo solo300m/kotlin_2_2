@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.example.service.WallServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-01T13:07:05" hostname="DESKTOP-CU7RLI7" time="0.03">
+<testsuite name="org.example.service.WallServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2022-11-02T12:57:37" hostname="DESKTOP-CU7RLI7" time="0.042">
   <properties/>
-  <testcase name="update()" classname="org.example.service.WallServiceTest" time="0.03"/>
+  <testcase name="update()" classname="org.example.service.WallServiceTest" time="0.033"/>
+  <testcase name="add()" classname="org.example.service.WallServiceTest" time="0.0"/>
+  <testcase name="createComment2()" classname="org.example.service.WallServiceTest" time="0.007"/>
   <system-out><![CDATA[Результат выдан true
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
