@@ -2,9 +2,8 @@ package org.example.service
 
 import org.example.data.Post
 import org.example.data.includeClasses.Comment
-import org.junit.jupiter.api.Test
-
-import org.junit.jupiter.api.Assertions.*
+import org.junit.Assert.assertEquals
+import org.junit.Test
 
 internal class WallServiceTest {
 
@@ -77,7 +76,7 @@ internal class WallServiceTest {
         assertEquals(true, upTest);
     }
 
-    /*@Test(expected = PostNotFoundException::class) не работает???
+    @Test(expected = PostNotFoundException::class)
     fun createComment() {
         val post: Post = Post(
             1, 1, 1, 1, 1, "any text",
@@ -111,7 +110,7 @@ internal class WallServiceTest {
         val comment: Comment = Comment(1, false, false, false, false)
         WallService.createComment(4, comment);
 
-    }*/
+    }
 
     @Test
     fun createComment2() {
