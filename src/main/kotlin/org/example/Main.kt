@@ -42,7 +42,7 @@ public fun main() {
     val postAdd2 = WallService.add(postSecond);
     val postAdd3 = WallService.add(postThree);
     val comment:Comment=Comment(1,false,false,false,false)
-    val com = WallService.createComment(3,comment);
+    val com = WallService.createComment(5,comment);
     println("Post ${postAdd.id} OwnerID ${postAdd.ownerId} Text ${postAdd.text}");
     println("Post ${postAdd2.id} OwnerID ${postAdd2.ownerId} Text ${postAdd2.text}");
     println("Post ${postAdd3.id} OwnerID ${postAdd3.ownerId} Text ${postAdd3.text} Comment ${postAdd3.comments?.last().toString()}");
