@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.data.ListNodeTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2022-11-11T17:54:07" hostname="DESKTOP-CU7RLI7" time="0.03">
+  <properties/>
+  <testcase name="getFriendsNotes" classname="org.example.data.ListNodeTest" time="0.02"/>
+  <testcase name="edit180" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="editComment181" classname="org.example.data.ListNodeTest" time="0.002"/>
+  <testcase name="editComment183" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="editComment" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="delete" classname="org.example.data.ListNodeTest" time="0.001"/>
+  <testcase name="createComment" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="deleteComment183" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="getSortDesc" classname="org.example.data.ListNodeTest" time="0.003"/>
+  <testcase name="delete180" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="getById" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="getNull" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="add" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="get" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="edit" classname="org.example.data.ListNodeTest" time="0.001"/>
+  <testcase name="restoreComment" classname="org.example.data.ListNodeTest" time="0.001"/>
+  <testcase name="deleteComment" classname="org.example.data.ListNodeTest" time="0.0"/>
+  <testcase name="getComments" classname="org.example.data.ListNodeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
