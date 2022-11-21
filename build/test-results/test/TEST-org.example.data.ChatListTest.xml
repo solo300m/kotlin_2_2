@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.data.ChatListTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2022-11-21T10:26:59" hostname="DESKTOP-CU7RLI7" time="0.023">
+  <properties/>
+  <testcase name="creatMessage" classname="org.example.data.ChatListTest" time="0.014"/>
+  <testcase name="editMessage" classname="org.example.data.ChatListTest" time="0.001"/>
+  <testcase name="delete" classname="org.example.data.ChatListTest" time="0.001"/>
+  <testcase name="getListChat" classname="org.example.data.ChatListTest" time="0.0"/>
+  <testcase name="getChatsAll" classname="org.example.data.ChatListTest" time="0.0"/>
+  <testcase name="add" classname="org.example.data.ChatListTest" time="0.0"/>
+  <testcase name="delMessageAll" classname="org.example.data.ChatListTest" time="0.0"/>
+  <testcase name="setMessageReadAll" classname="org.example.data.ChatListTest" time="0.001"/>
+  <testcase name="getMessageOfChat" classname="org.example.data.ChatListTest" time="0.0"/>
+  <testcase name="delMessage" classname="org.example.data.ChatListTest" time="0.001"/>
+  <testcase name="getChatOne" classname="org.example.data.ChatListTest" time="0.002"/>
+  <testcase name="getChats" classname="org.example.data.ChatListTest" time="0.002"/>
+  <system-out><![CDATA[нет сообщений
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
