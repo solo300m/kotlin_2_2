@@ -60,22 +60,22 @@ class ChatList {
         val index = listChat.getIndexChat(chatId);
         if(index >= 0) {
             if (listChat.get(index).messages != null) {
-                val idxMes:Int = listChat.get(index).messages!!.size;
-                listChat.get(index).messages!!.add(MessageChat(idxMes, userId, false, text, LocalDate.now()));
-                return listChat.get(index).messages!!.last();
+                val idxMes:Int = listChat.get(index).messages?.size?:0;
+                listChat.get(index).messages?.add(MessageChat(idxMes, userId, false, text, LocalDate.now()));
+                return listChat.get(index).messages?.last();
             } else {
                 val idxMes:Int = 0;
                 listChat.get(index).messages = mutableListOf();
-                listChat.get(index).messages!!.add(MessageChat(idxMes, userId, false, text, LocalDate.now()));
-                return listChat.get(index).messages!!.last();
+                listChat.get(index).messages?.add(MessageChat(idxMes, userId, false, text, LocalDate.now()));
+                return listChat.get(index).messages?.last();
             }
         }
         else{
             add(userId,questId);
             val idxMes:Int = 0;
             listChat.get(index).messages = mutableListOf();
-            listChat.get(index).messages!!.add(MessageChat(idxMes, userId, false, text, LocalDate.now()));
-            return listChat.get(index).messages!!.last();
+            listChat.get(index).messages?.add(MessageChat(idxMes, userId, false, text, LocalDate.now()));
+            return listChat.get(index).messages?.last();
         }
         //return null;
     }
@@ -214,8 +214,9 @@ class ChatList {
         val indexAll:Int = -1;
         val chatIndex:Int = listChat.getIndexChat(chatId);
         if(chatIndex >= 0){
-            if(listChat[chatIndex].messages != null && !listChat[chatIndex].messages?.isEmpty()!!){
-                for((index,mes) in listChat[chatIndex].messages!!?.withIndex()){
+            if(listChat[chatIndex].messages != null && listChat[chatIndex].messages?.size != 0){
+                val arr = listChat[chatIndex].messages;
+                for((index,mes) in arr!!.withIndex()){
                     if(mes.messId == messId)
                         return index;
                 }
